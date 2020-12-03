@@ -86,10 +86,8 @@ public class ResetScoreScreen extends Screen{
 
     private void draw() {
         drawManager.initDrawing(this);
-
         drawManager.drawResetScoreMenu(this);
         drawManager.drawChoice(this, this.returnCode);
-
         drawManager.completeDrawing(this);
     }
 }
