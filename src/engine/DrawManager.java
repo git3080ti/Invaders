@@ -333,7 +333,7 @@ public final class DrawManager {
 		drawCenteredRegularString(screen, exitString, screen.getHeight() / 3
 				* 2 + fontRegularMetrics.getHeight() * 6);
 	}
-
+	// Reset score - Y/N choice menu
 	public void drawChoice(final Screen screen, final int option){
 		String yesString = "Yes";
 		String noString = "No";
@@ -488,6 +488,7 @@ public final class DrawManager {
 		drawCenteredRegularString(screen, instructionsString,
 				screen.getHeight() / 5);
 	}
+
 	public void drawResetScoreMenu(final Screen screen) {
 		String ResetScoreString = "Reset Scores";
 		String instructionsString =

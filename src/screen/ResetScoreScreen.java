@@ -67,6 +67,10 @@ public class ResetScoreScreen extends Screen{
                 this.isRunning = false;
         }
     }
+    /**
+     * returnCode 5: Yes (reset Scores)
+     * returnCode 6: No (Do not reset)
+    */
     private void nextMenuItem() {
         if (this.returnCode == 6)
             this.returnCode = 5;

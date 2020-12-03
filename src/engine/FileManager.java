@@ -208,6 +208,7 @@ public final class FileManager {
 		return highScores;
 	}
 
+	//Reset Score data/
 	public static void resetScores() {
 		try {
 			String jarPath = FileManager.class.getProtectionDomain()
