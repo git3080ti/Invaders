@@ -303,28 +303,33 @@ public final class DrawManager {
 	 *            Option selected.
 	 */
 	public void drawMenu(final Screen screen, final int option) {
-		String playString = "Play";
+		String play1String = "Play 1P";
+		String play2String = "Play 2P";
 		String highScoresString = "High scores";
 		String exitString = "exit";
 
+		if (option == 10)
+			backBufferGraphics.setColor(Color.GREEN);
+		else
+			backBufferGraphics.setColor(Color.WHITE);
+		drawCenteredRegularString(screen, play1String, screen.getHeight() / 9 * 5);
 		if (option == 2)
 			backBufferGraphics.setColor(Color.GREEN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
-		drawCenteredRegularString(screen, playString,
+		drawCenteredRegularString(screen, play2String,
 				screen.getHeight() / 3 * 2);
 		if (option == 3)
 			backBufferGraphics.setColor(Color.GREEN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
 		drawCenteredRegularString(screen, highScoresString, screen.getHeight()
-				/ 3 * 2 + fontRegularMetrics.getHeight() * 2);
+				/ 9 * 7);
 		if (option == 0)
 			backBufferGraphics.setColor(Color.GREEN);
 		else
 			backBufferGraphics.setColor(Color.WHITE);
-		drawCenteredRegularString(screen, exitString, screen.getHeight() / 3
-				* 2 + fontRegularMetrics.getHeight() * 4);
+		drawCenteredRegularString(screen, exitString, screen.getHeight() / 9 * 8);
 	}
 
 	/**
