@@ -30,6 +30,18 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
+
+                <configuration>
+                    
+                    <testSourceDirectory>${project.basedir}/test/</testSourceDirectory>
+                    <testClassesDirectory>${project.build.directory}</testClassesDirectory>
+
+                    <includes>
+                        <include>entity/ShipTest.java</include>
+                    </includes>
+
+                </configuration>
+
             </plugin>
         </plugins>
     </build>
