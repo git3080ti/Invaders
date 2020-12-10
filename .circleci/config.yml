@@ -8,8 +8,9 @@ jobs:
     steps:
     - checkout
     - run: mvn install
-    
-    
+    - run: mvn test
+    - run: ls -al
+
 workflows:
   version: 2
   build:
