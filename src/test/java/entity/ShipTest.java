@@ -28,8 +28,7 @@ class ShipTest {
         Set<Bullet> bullets = new HashSet<Bullet>();
         assertEquals(true,ship.shoot(bullets));
         assertEquals(false,ship.shoot(bullets));
-        Thread.sleep(750);
-        assertEquals(true,ship.shoot(bullets));
+
     }
 
     @org.junit.jupiter.api.Test
@@ -38,11 +37,7 @@ class ShipTest {
         ship.update();
         assertEquals(true, ship.getSpriteType() == DrawManager.SpriteType.ShipDestroyed);
         assertEquals(true, ship.isDestroyed());
-        Thread.sleep(1000);
-
-        ship.update();
-        assertEquals(false, ship.getSpriteType() == DrawManager.SpriteType.ShipDestroyed);
-        assertEquals(false, ship.isDestroyed());
+        
 
     }
 
